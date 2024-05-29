@@ -1,0 +1,403 @@
+body {
+   /* width: 100vw;
+   height: 100vh; */
+   background-color: #BB0505;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #1E90FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.logo img{
+    width: 50%;
+    background-color: transparent;
+}
+
+.navbar button{
+    padding: 1.0rem 1.5rem;
+    display: inline-block;
+    background-color: black;
+    border-radius: 0.6rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.tituloTela span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+.linha {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5px;
+    align-items: center;
+    background-color: #BB0505;
+    color: #ffff;
+}
+
+:root {
+    --azulcal: #1E90FF;
+    --primary: #BB0505; 
+}
+
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+/* Estilização do primeiro card */
+
+.container h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.card {
+   background-color: var(--azulcal);
+   box-shadow: 0 0 2.5rem rgba(0,0,0, 0.28);
+}
+
+.card-imagem {
+    height: 35rem;
+    overflow: hidden;
+}
+
+.card-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card1 {
+    padding: 2rem;
+}
+
+.card1-texto1 {
+    display: flex;
+    align-items: center;
+}
+
+.texto1{
+    color: white;
+    font-size: 15px;
+}
+
+.onepiece{
+    color: white;
+}
+
+.botao{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    padding: 1.6rem 4rem;
+    display: inline-block;
+    background-color: black;
+    border-radius: 0.6rem;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+    .card{
+        display: flex;
+        height: 35rem;
+        overflow: hidden;
+    }
+
+    .card-imagem{
+        height: auto;
+        flex: 1;
+    }
+
+    .card1{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Estilização do segundo card */
+
+.container2 {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.container2 h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.card {
+    background-color: var(--azulcal);
+    box-shadow: 0 0 2.5rem rgba(0,0,0, 0.28);
+}
+
+.card-imagem {
+    height: 35rem;
+    overflow: hidden;
+}
+
+.card-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card1 {
+    padding: 2rem;
+}
+
+.card1-texto2 {
+    display: flex;
+    align-items: center;
+}
+
+.texto2 {
+    color: white;
+    font-size: 15px;
+}
+
+.fome {
+    color: white;
+}
+
+.botao{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6.5rem;
+}
+.button{
+    justify-content: center;
+    padding: 1.6rem 4rem;
+    display: inline-block;
+    background-color: black;
+    border-radius: 0.6rem;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+    .card2{
+        display: flex;
+        height: 35rem;
+        overflow: hidden;
+    }
+
+    .card2-imagem{
+        height: auto;
+        flex: 1;
+    }
+
+    .card2{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.container3 {
+    width: 80%;
+    height: 80%;
+    margin: 2rem auto;
+}
+
+.container3 h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.card {
+    background-color: var(--azulcal);
+    box-shadow: 0 0 2.5rem rgba(0,0,0, 0.28);
+}
+
+.card-imagem {
+    height: 35rem;
+    overflow: hidden;
+}
+
+.card-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card1 {
+    padding: 2rem;
+}
+
+.card1-texto2 {
+    display: flex;
+    align-items: center;
+}
+
+.texto2 {
+    color: white;
+    font-size: 15px;
+}
+
+.eu {
+    color: white;
+}
+
+
+@media screen and (min-width: 900px) {
+    .card2{
+        display: flex;
+        height: 35rem;
+        overflow: hidden;
+    }
+
+    .card2-imagem{
+        height: auto;
+        flex: 1;
+    }
+
+    .card2{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #1E90FF;
+
+}
+
+.footer .logo img {
+    width: 50%;
+    background-color: transparent;
+}
+
+.caixa {
+    
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    align-items: center;
+    /* margin: 10px; */
+    margin-top: 0;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes span {
+    font-size: 25px;
+}
+
+.fundocaixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.texto a {
+    font-size: 20px;
+}
+
+.email {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.email img{
+    width: 25px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.telefone img{
+    width: 30px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.telefone span{
+    font-size: large;
+}
+
+.redes .imgInsta{
+    margin-top: 8px;
+}
+
+
+
+
