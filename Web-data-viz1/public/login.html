@@ -43,9 +43,6 @@
 
     <!-- <div class="login"> -->
     <div class="alerta_erro">
-        <div class="card_erro" id="cardErro">
-            <span id="mensagem_erro"></span>
-        </div>
     </div>
     <div class="login">
         <div class="form">
@@ -58,8 +55,11 @@
             <input id="senha_input" type="password" placeholder="******">
             <button class="button1" onclick="entrar()"> <a href="dashboard.html"></a>Entrar</button>
             <div class="rodape_login">
-                <span>Ainda não possui cadastro?</span><button class="button2"> <a
+                <span id="nao">Ainda não possui cadastro?</span><button class="button2"> <a
                         href="cadastro.html">Cadastrar</a></button>
+            </div>
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
             </div>
         </div>
         <div id="div_aguardar" class="loading-div">
@@ -99,7 +99,7 @@
 
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            mensagem_erro.innerHTML = "<b><p style= 'color: white; font-size: 15px;'>(Preencha todos os campos corretamente)</p></b>";
             finalizarAguardar();
             return false;
         }
