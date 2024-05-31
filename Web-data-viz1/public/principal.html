@@ -11,6 +11,7 @@
   <script src="./js/sessao.js"></script>
 
   <link rel="stylesheet" href="./css/principal.css">
+  <link rel="stylesheet" href="../app.js">
   <!-- <link rel="icon" href="./assets/icon/favicon2.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com"> -->
 </head>
@@ -28,10 +29,10 @@
     <!-- <span class="bemvindo">Seja Bem-vindo</span> -->
     <!-- <button onclick="window.location.href='login.html'" class="botaologin">
       Entrar
-    </button>
-    <button onclick="window.location.href='cadastro.html'" class="botaocadastro">
-      Cadastro
     </button> -->
+    <button onclick="window.location.href='index.html'" class="botao">
+      Sair
+    </button>
   </div>
   <div class="linha">
     <p></p>
@@ -43,38 +44,97 @@
   </div>
   <div class="linha">
   </div>
+  <div class="carrosel">
+    <div class="lista">
+      <div class="itens">
+        <img src="./assets/imgs/Romance Dawn.jpeg">
+        <div class="conteudo">
+          <div class="autor">Eiichiro Oda</div>
+          <div class="titulo">Romance Dawn</div>
+          <div class="descricao">Influenciado por Shanks, Luffy inicia sua jornada para se tornar o Rei dos Piratas ao
+            encontrar um tesouro escondido pelo anterior Rei dos Piratas, Gold Roger. No início de sua jornada, ele luta
+            contra a capitã pirata Alvida e liberta seu grumete Koby, que quer se tornar um fuzileiro naval. Luffy e
+            Koby chegam a Shells Town, onde encontram o corrupto capitão da Marinha, Axe-Hand Morgan, seu filho Helmeppo
+            e o caçador de piratas Roronoa Zoro.
+          </div>
+          <div class="botao">
+            <button>Saiba mais</button>
+          </div>
+        </div>
+      </div>
+      <div class="itens">
+        <img src="./assets/imgs/Orange town.jpeg">
+        <div class="conteudo">
+          <div class="autor">Eiichiro Oda</div>
+          <div class="titulo">Romance Dawn</div>
+          <div class="descricao">Influenciado por Shanks, Luffy inicia sua jornada para se tornar o Rei dos Piratas ao
+            encontrar um tesouro escondido pelo anterior Rei dos Piratas, Gold Roger. No início de sua jornada, ele luta
+            contra a capitã pirata Alvida e liberta seu grumete Koby, que quer se tornar um fuzileiro naval. Luffy e
+            Koby chegam a Shells Town, onde encontram o corrupto capitão da Marinha, Axe-Hand Morgan, seu filho Helmeppo
+            e o caçador de piratas Roronoa Zoro.
+          </div>
+          <div class="botao">
+            <button>Saiba mais</button>
+          </div>
+        </div>
+      </div>
+      <div class="itens">
+        <img src="./assets/imgs/ArlongPark.jpeg">
+        <div class="conteudo">
+          <div class="autor">Eiichiro Oda</div>
+          <div class="titulo">Romance Dawn</div>
+          <div class="descricao">Influenciado por Shanks, Luffy inicia sua jornada para se tornar o Rei dos Piratas ao
+            encontrar um tesouro escondido pelo anterior Rei dos Piratas, Gold Roger. No início de sua jornada, ele luta
+            contra a capitã pirata Alvida e liberta seu grumete Koby, que quer se tornar um fuzileiro naval. Luffy e
+            Koby chegam a Shells Town, onde encontram o corrupto capitão da Marinha, Axe-Hand Morgan, seu filho Helmeppo
+            e o caçador de piratas Roronoa Zoro.
+          </div>
+          <div class="botao">
+            <button>Saiba mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  
+    <!-- thumbs -->
 
+    <div class="thumb">
+      <div class="item">
+        <img src="./assets/imgs/Romance Dawn.jpeg">
+        <div class="conteudo">
+          <div class="titulo">
+          </div>
+          <div class="descricao">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./assets/imgs/Orange town.jpeg">
+        <div class="conteudo">
+          <div class="titulo">
+          </div>
+          <div class="descricao">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./assets/imgs/ArlongPark.jpeg">
+        <div class="conteudo">
+          <div class="titulo">
+          </div>
+          <div class="descricao">
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Setas -->
+    <div class="setas">
+      <button onclick="atual()" id="atual"><</button>
+      <button onclick="proximo()" id="proximo">></button>
+    </div>
+    <div class="tempo"></div>
+  </div>
 
 
 
@@ -117,7 +177,7 @@
         </div>
     </div>
   </div> -->
-  
+
 
 
   <div class="footer">
@@ -128,7 +188,7 @@
       <div class="redes">
         <span>Me acompanhe:</span>
         <img class="imgInsta" src="./assets/icon/Instagram.png" alt="">
-        <img src="imagens/LinkedIn.png" alt="">
+        <!-- <img src="imagens/LinkedIn.png" alt=""> -->
         <img src="./assets/icon/Facebook.png" alt="">
       </div>
     </div>
@@ -152,7 +212,7 @@
     </div>
   </div>
 
-
+<script src="app.js"></script>
 
 
 </body>
