@@ -7,54 +7,6 @@ var caminho_env = ambiente_processo === 'producao' ? '.env' : '.env.dev';
 
 require("dotenv").config({ path: caminho_env });
 
-var prox = document.getElementById('proximo');
-var atual = document.getElementById('atual');
-var carrosel = document.querySelector('.carrosel');
-var listaItemDom = document.querySelector('.carrosel .lista');
-var thumb = document.querySelector('.carrosel .thumb');
-
-prox.onclick = function() {
-    mostrarSlider('proximo');
-    console.log('cjibcbewibi')
-}
-atual.onclick = function (){
-    showSlider('atual')
-}
-
-function proximo(){
-    console.log('gugeygdye')
-}
-var tempoCorrendo = 3000;
-var tempoAutoProx = 7000;
-var tempoFim;
-var Autorun;
-function mostrarSlider(type) {
-    var itemSlider = document.querySelectorAll('.carrosel .list .item');
-    var itemThumb = document.querySelectorAll('.carrosel .thumb .item');
-
-    if(type === 'next'){
-        listaItemDom.appendChild(itemSlider[0]);
-        thumbDom.appendChild(itemThumb[0]);
-        carrosel.classList.add('proximo');
-    } else {
-        var positionUltimoItem = itemSlider.length - 1;
-        listaItemDom.prepend(itemSlider[positionUltimoItem]);
-        thumb.prepend(itemThumb[positionUltimoItem]);
-        carrosel.classList.add('atual')
-    }
-
-    clearTimeout(tempoFim);
-    tempoFim = setTimeout(() =>{
-        carrosel.classList.remove('next');
-        carrosel.classList.remove('atual');
-    }, tempoCorrendo)
-
-    clearTimeout(Autorun);
-    Autorun = setTimeout(() =>{
-        prox.click();
-    }, tempoAutoProx)
-}
-
 var express = require("express");
 var cors = require("cors");
 var path = require("path");
