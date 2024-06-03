@@ -105,6 +105,7 @@ a {
 }
 
 .carrosel .lista .itens img {
+    border-color: white;
     margin-left: 830px;
     margin-top: 120px;
     margin-bottom: 15px;
@@ -245,7 +246,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .5s;
+    transition: 0s;
 }
 
 .setas button:hover {

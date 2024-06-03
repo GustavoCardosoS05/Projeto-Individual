@@ -53,7 +53,7 @@
             <input id="email_input" type="text" placeholder="Login">
             <span>Senha:</span>
             <input id="senha_input" type="password" placeholder="******">
-            <button class="button1" onclick="entrar()"> <a href="dashboard.html"></a>Entrar</button>
+            <button class="button1" onclick="entrar()"> <a href="principal.html"></a>Entrar</button>
             <div class="rodape_login">
                 <span id="nao">Ainda não possui cadastro?</span><button class="button2"> <a
                         href="cadastro.html">Cadastrar</a></button>
@@ -62,9 +62,9 @@
                 <span id="mensagem_erro"></span>
             </div>
         </div>
-        <div id="div_aguardar" class="loading-div">
+        <!-- <div id="div_aguardar" class="loading-div">
             <img src="./assets/circle-loading.gif" id="loading-gif">
-        </div>
+        </div> -->
 
 
         <div id="div_erros_login"></div>
@@ -92,7 +92,7 @@
 
 
     function entrar() {
-        aguardar();
+        // aguardar();
 
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
@@ -100,11 +100,11 @@
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "<b><p style= 'color: white; font-size: 15px;'>(Preencha todos os campos corretamente)</p></b>";
-            finalizarAguardar();
+            // finalizarAguardar();
             return false;
         }
         else {
-            setInterval(sumirMensagem, 5000)
+            // setInterval(sumirMensagem, 5000)
         }
 
         console.log("FORM LOGIN: ", emailVar);
@@ -134,7 +134,7 @@
                     // sessionStorage.AQUARIOS = JSON.stringify(json.aquarios)
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "principal.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
@@ -156,8 +156,8 @@
         return false;
     }
 
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
+    // function sumirMensagem() {
+        // cardErro.style.display = "none"
+    // }
 
 </script>
