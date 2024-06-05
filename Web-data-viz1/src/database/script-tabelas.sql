@@ -10,29 +10,22 @@ Create database OnePiece;
 
 Use OnePiece;
 
-Create table Usuario (
-idUsuario int primary key auto_increment,
-nome varchar (45),
-email varchar (45),
-CPF char (14),
-CEP char (9),
-numero varchar(45));
+-- Create table Usuario (
+-- idUsuario int primary key auto_increment,
+-- nome varchar (45),
+-- email varchar (45),
+-- CPF char (14),
+-- CEP char (9),
+-- numero varchar(45));
 
 Create Table Login(
 idLogin int primary key auto_increment,
 senha varchar(45),
-email varchar(45),
-fklogin int,
-foreign key (fklogin) references Usuario (idUsuario));
+email varchar(45));
 
 Create table Quiz(
 idQuiz int primary key auto_increment,
-pergunta varchar(45),
-resposta varchar(45));
-
-Create table Usuario_Quiz (
-fkUsuarioQuiz int,
-foreign key (fkusuarioQuiz) references Usuario (idUsuario),
-fkQuiz int,
-foreign key (fkQuiz)references Quiz (idQuiz),
-primary key (fkUsuarioQuiz, fkQuiz));	
+alternativaCorreta varchar(45),
+questoes varchar(45),
+fkLogin int,
+foreign key (fkLogin) references Login(idLogin));

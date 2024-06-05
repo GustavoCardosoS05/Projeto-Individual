@@ -31,6 +31,7 @@ body {
     height: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     background-color: #1E90FF;
     cursor: pointer;
     position: fixed;
@@ -39,7 +40,7 @@ body {
 
 .menu a {
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 50px;
     cursor: pointer;
 }
 
@@ -50,7 +51,7 @@ a {
 }
 
 .logo img {
-    margin-left: 100px;
+    margin-left: 50px;
     width: 50%;
     background-color: transparent;
 }
@@ -62,7 +63,7 @@ a {
     border-radius: 0.6rem;
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     cursor: pointer;
 }
 

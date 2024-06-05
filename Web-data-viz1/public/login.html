@@ -17,29 +17,6 @@
 
 <body>
 
-    <!--Header-->
-
-    <!-- <div class="header">
-        <div class="container">
-            <h1 class="titulo">One Piece</h1>
-            <ul class="navbar">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                 <li>
-                    <a href="simulador.html">Simulador</a>
-                </li> 
-                 <li>|</li> 
-                <li class="agora">
-                    <a href="#">Entrar</a>
-                </li>
-                <li>
-                    <a href="cadastro.html">Cadastro</a>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-
 
     <!-- <div class="login"> -->
     <div class="alerta_erro">
@@ -130,7 +107,7 @@
                     console.log(JSON.stringify(json));
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
-                    sessionStorage.ID_USUARIO = json.idUsuario;
+                    sessionStorage.ID_USUARIO = json.idLogin;
                     // sessionStorage.AQUARIOS = JSON.stringify(json.aquarios)
 
                     setTimeout(function () {
