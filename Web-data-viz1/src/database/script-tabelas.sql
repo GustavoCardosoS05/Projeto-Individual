@@ -25,7 +25,7 @@ email varchar(45));
 
 Create table Quiz(
 idQuiz int primary key auto_increment,
-alternativaCorreta varchar(45),
+alternativaCorreta int,
 questoes varchar(45),
 fkLogin int,
 foreign key (fkLogin) references Login(idLogin));

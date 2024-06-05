@@ -89,7 +89,7 @@ const question = document.querySelector(".question");
         var idUsuarioVar = sessionStorage.ID_USUARIO;
         console.log(idUsuarioVar)
         
-        var questoesCorretasVar = questionsCorrect;
+        var alternativaCorretaVar = questionsCorrect;
         var questoesVar = questions.length;
 
         fetch("/Quiz/CadastrarQuiz", {
@@ -101,7 +101,7 @@ const question = document.querySelector(".question");
             // crie um atributo que recebe o valor recuperado aqui
             // Agora vá para o arquivo routes/usuario.js
             questoesServer: questoesVar,
-            alternativaCorretaServer: questoesCorretasVar,
+            alternativaCorretaServer: alternativaCorretaVar,
             idUsuarioServer: idUsuarioVar
           }),
         })
