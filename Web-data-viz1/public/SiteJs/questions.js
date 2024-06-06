@@ -82,9 +82,9 @@ export default [
     {
         question: "Qual dupla não fazia parte dos 7 Shichibukais?",
         answers: [
-            {option: "Crocodille e Mihawk", correct: true},
+            {option: "Crocodille e Mihawk", correct: false},
             {option: "Law e Barba Negra", correct: false},
-            {option: "Law e Kid", correct: false},
+            {option: "Law e Kid", correct: true},
             {option: "Law e Doflamingo", correct: false},
         ],
     },

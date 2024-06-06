@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+h1 {
+    font-family: 'Poppins';
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    /* -webkit-text-stroke: 2px black; font-size: 50px; */
+}
+
+html, body {
+    height: 1000px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #BB0505;
+    /* font-size: 12px; */
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.navbar {
+    width: 1450px;
+    max-width: 100%;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 920px;
+    /* margin-right: 50px; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1E90FF;
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+}
+
+.menu a {
+    font-size: 17.5px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.logo img {
+    margin-left: 50px;
+    width: 50%;
+    background-color: transparent;
+}
+
+.navbar button {
+    padding: 1.0rem 1.5rem;
+    display: inline-block;
+    background-color: black;
+    border-radius: 0.6rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.tituloTela span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: -15px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.linha {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5px;
+    align-items: center;
+    background-color: #BB0505;
+    color: #ffff;
+}
+
+
+
+.container {
+    margin-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #ee0f0f;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e90ff;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: #BB0505;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#select_TiposChocolate {
+    display: block;
+    margin: 0 auto;
+
+}
+
+#labelSelect {
+
+    text-align: center;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-items: center;
+
+
+
+}
+
+
+
+.btn {
+    /* font-family: sans-serif;
+font-weight: 500;
+font-size: 15px;
+color: #000000;
+background-color: #0066cc00;
+padding: 10px 36px;
+margin-left: 40%;
+border: solid #736f4b42 1px;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+border-radius: 0px 1px 1px;
+transition : 613ms;
+transform: translateY(0);
+align-items: center;
+cursor: pointer;
+text-transform: lowercase;
+text-align: center; */
+
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(102, 102, 102, 0.8) 238.33%);
+    padding: 7px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    padding: 10px 70px;
+    margin-left: 33%;
+    margin: 0 auto;
+
+}
+
+.btn:hover {
+    transition: 613ms;
+    transform: translateY(-0px);
+    color: #c27e30;
+    border: solid 1px #c27e30;
+}
+
+
+#div_mensagem  {
+    margin-top: 100px;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 17.5px;
+    color: white;
+}
+
+.div_inputs span{
+    color: white;
+    margin-left: 140px;
+}
+
+.UnidadeTempo {
+    margin-left: 215px;
+}
+
+.abertura {
+    margin-left: 215px;
+}
+
+.encerramento {
+    margin-left: 215px;
+}
+
+#input_epInicial {
+    margin-left: 150px;
+}
+
+#input_TempDisp{
+    margin-left: 150px;
+}
+
+button {
+    background-color: black;
+    color: #ffff;
+    margin-left: 230px;
+    margin-top: 15px;
+    border-radius: 0.6rem;
+}
+
+.select {
+    color: white;
+}
+
+
