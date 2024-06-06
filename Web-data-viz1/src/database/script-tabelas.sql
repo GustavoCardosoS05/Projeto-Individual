@@ -10,13 +10,6 @@ Create database OnePiece;
 
 Use OnePiece;
 
--- Create table Usuario (
--- idUsuario int primary key auto_increment,
--- nome varchar (45),
--- email varchar (45),
--- CPF char (14),
--- CEP char (9),
--- numero varchar(45));
 
 Create Table Login(
 idLogin int primary key auto_increment,
