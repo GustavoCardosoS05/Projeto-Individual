@@ -199,8 +199,9 @@
             datasets: [{
                 label: 'Respostas Certas',
                 data: [],
+                backgroundColor: [],
                 fill: false,
-                borderColor: 'rgb(75, 192, 192)',
+                borderColor: 'rgb(0, 0, 0)',
                 tension: 0.1
 
             },
@@ -222,8 +223,10 @@
         for (i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
             labels.push(registro.Porcentagem + `%`);
-            dados.datasets[0].data.push(registro.questoes);
-            dados.datasets[0].data.push(registro.alternativaCorreta);
+            var acertos = registro.Porcentagem / 10 
+            dados.datasets[0].data.push(acertos);
+            // dados.datasets[0].data.push(registro.alternativaCorreta);
+            dados.datasets[0].backgroundColor.push('rgb(255, 255, 255)');
         }
 
         console.log('----------------------------------------------')
