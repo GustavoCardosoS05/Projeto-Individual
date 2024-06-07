@@ -1,43 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
 
-body {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5px;
-    background: linear-gradient(90deg, rgb(159, 30, 30)0%, rgb(221, 3, 3)100%);
-}
-
-body h2 {
-    color: white;
-    margin-top: 200px;
-}
-
-main {
-    background-color: #1E90FF;
-    padding: 10px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 700px;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-image: url(../assets/imgs/Luffy.jpeg); */
-}
 
 .navbar {
-    width: 1350px;
+    width: 1450px;
     max-width: 100%;
     margin: 0;
     height: 80px;
@@ -46,8 +12,9 @@ main {
     justify-content: space-evenly;
     background-color: #1E90FF;
     cursor: pointer;
-    position: fixed;
+    /* position: fixed; */
     z-index: 999;
+    margin-bottom: 50px;
 }
 
 .menu a {
@@ -100,57 +67,84 @@ a {
     color: #ffff;
 }
 
+/* Quiz.css */
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #BB0505;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #ffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
 .content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-}
-
-.spnQtd {
-    text-align: end;
-}
-
-.answers {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-button {
-    width: 100%;
-    text-align: start;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: white;
-    color: black;
+    border: 1px solid #ccc;
+    border-radius: 0.6rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    background-color: #ffff;
 }
 
 .finish {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.finish button {
     text-align: center;
-    background-color: black;
+}
+
+button {
+    background-color: #1E90FF;
     color: white;
+    padding: 10px 200px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.content .question {
-    color: aliceblue;
-    margin-bottom: 100px;
+button .answer {
+    width: 100%;
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 187px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.content .spnQtd {
-    color: aliceblue;
-    /* margin-top: 50px; */
+button:hover {
+    background-color: #76b7f3;
 }
 
-.content img {
-    width: 300px;
-    height: 400px;
+span {
+    margin-right: 10px;
+}
+
+.answers {
+    display: block;
+    margin-top: 10px;
+}
+
+.answer {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+}
+
+span.spnQtd {
+    color: black;
+}
+
+span.question {
+    color: black;
 }

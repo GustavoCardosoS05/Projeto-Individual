@@ -42,6 +42,7 @@
            <span>Episódio que deseja começar assistindo:</span>  <br> <input type="text" id="input_epInicial"><br>
             <span>Quantidade de tempo disponível:</span>  <br> <input type="text" id="input_TempDisp"><br>
         </div>
+        <div class="escolhas">
         <div class="UnidadeTempo">
           <span class="select">Unidade de tempo:</span> <br>
             <select id="UnidadeTempo">
@@ -66,8 +67,11 @@
                 <option value="2">Não</option>
             </select><br>
         </div>
+        </div>
+        <div class="botao2">
         <button onclick="Assistir()">Assistir Episódios</button>
         <div id="div_mensagem"></div>
+    </div>
     </div>
 </body>
 
@@ -99,7 +103,7 @@
 
             var episodios = TempoDisp / TempoEp
 
-            for (var index = 0; index <= episodios; index++) {
+            for (var index = 0; index < episodios; index++) {
 
                 div_mensagem.innerHTML += `<br>Episódio ${EpInicial + index}<br>`
 

@@ -93,44 +93,50 @@ a {
     color: #ffff;
 }
 
+/* Primeiro Botão */
 
-
-.container {
-    margin-top: 50px;
-    width: 50%;
-    margin: 0 auto;
-    border: 2px solid #ee0f0f;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #1e90ff;
+button {
+    background-color: black;
+    color: #ffff;
+    margin-left: 215px;
+    /* margin-top: 15px; */
+    border-radius: 0.6rem;
 }
 
 
-body {
+
+
+.container {
+    margin-top: 300px;
+    width: 50%;
+    /* margin: 0 auto; */
+    /* border: 2px solid #ee0f0f; */
+    padding: 20px;
+    border-radius: 10px;
+    /* background-color: #1e90ff; */
+}
+
+
+/* body {
     width: 100%;
     height: 100%;
     padding: 30px;
     background-color: #BB0505;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
-#select_TiposChocolate {
-    display: block;
-    margin: 0 auto;
-
-}
-
-#labelSelect {
-
+#div_mensagem  {
+    margin-top: 300px;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-
+    font-size: 17.5px;
+    color: white;
+    background-color: #1E90FF;
+    height: fit-content;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
+/* Estilização apenas das inputs */
 
 input {
     width: 50%;
@@ -140,98 +146,72 @@ input {
     border-radius: 4px;
     box-sizing: border-box;
     align-items: center;
-
-
-
 }
 
-
-
-.btn {
-    /* font-family: sans-serif;
-font-weight: 500;
-font-size: 15px;
-color: #000000;
-background-color: #0066cc00;
-padding: 10px 36px;
-margin-left: 40%;
-border: solid #736f4b42 1px;
-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-border-radius: 0px 1px 1px;
-transition : 613ms;
-transform: translateY(0);
-align-items: center;
-cursor: pointer;
-text-transform: lowercase;
-text-align: center; */
-
-
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(102, 102, 102, 0.8) 238.33%);
-    padding: 7px;
-    border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 13px;
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-    padding: 10px 70px;
-    margin-left: 33%;
-    margin: 0 auto;
-
+.div_inputs {
+    width: 100%;
+    margin-left: 15px;
+    height: 200px;
+    background-color: #1E90FF;
 }
-
-.btn:hover {
-    transition: 613ms;
-    transform: translateY(-0px);
-    color: #c27e30;
-    border: solid 1px #c27e30;
-}
-
-
-#div_mensagem  {
-    margin-top: 100px;
-    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    font-size: 17.5px;
-    color: white;
-}
-
+/* Estilização do span das inputs */
 .div_inputs span{
     color: white;
     margin-left: 140px;
-}
-
-.UnidadeTempo {
-    margin-left: 215px;
-}
-
-.abertura {
-    margin-left: 215px;
-}
-
-.encerramento {
-    margin-left: 215px;
+    background-color: #1E90FF;
 }
 
 #input_epInicial {
-    margin-left: 150px;
+    margin-left: 140px;
+    
 }
 
 #input_TempDisp{
-    margin-left: 150px;
+    margin-left: 140px;
 }
 
-button {
-    background-color: black;
-    color: #ffff;
-    margin-left: 230px;
-    margin-top: 15px;
-    border-radius: 0.6rem;
+/* Estilização dos selects */
+.escolhas {
+    width: 100%;
+    margin-left: 15px;
+    height: 200px;
+    background-color: #1E90FF;
 }
 
 .select {
     color: white;
 }
+
+.UnidadeTempo {
+    /* margin-bottom: 100px;
+    width: 180px; */
+    margin-left: 200px;
+    background-color: #1E90FF;
+}
+
+.abertura {
+    /* margin-bottom: 100px;
+    width: 180px; */
+    margin-left: 200px;
+    background-color: #1E90FF;
+}
+
+.encerramento {
+    /* margin-bottom: 100px;
+    width: 180px; */
+    margin-left: 200px;
+    background-color: #1E90FF;
+}
+
+/* Segundo botão */
+
+.botao2 { 
+    width: 100%;
+    margin-left: 15px;
+    height: 90px;
+    background-color: #1E90FF;
+}
+
+
 
 
