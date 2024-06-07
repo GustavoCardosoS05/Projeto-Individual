@@ -148,3 +148,25 @@ span.spnQtd {
 span.question {
     color: black;
 }
+
+.resposta-popup {
+    background-color: black;
+    
+    width: 150px;
+    border-radius: 5px;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Poppins;
+    margin-bottom: 5px;
+}
+
+
+.texto-resposta {
+    font-size: 15px;
+    color: green;
+    text-align: center; 
+}
