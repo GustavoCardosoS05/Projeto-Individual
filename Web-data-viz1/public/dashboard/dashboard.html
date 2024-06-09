@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece | Dashboards</title>
 
-    
+
     <link rel="stylesheet" href="./../css/dashboardsOnePiece.css">
     <!-- <link rel="stylesheet" href="./../css/estilo.css" /> -->
     <!-- <script src="../js/sessao.js"></script>
@@ -29,11 +29,13 @@
 <!-- <body onload=" atualizarFeed()"> -->
 
 <body>
+
     <body class="fundo" style="display: flex; background-color: #BB0505;">
         <div>
-            <canvas id="myChartCanvas" style="position: relative; height:100%; width:200%; justify-content: center; align-items: center; margin-top: 100px; margin-left: 200px; background-color: #1e90ff; " ></canvas>
+            <canvas id="myChartCanvas"
+                style="position: relative; height:100%; width:200%; justify-content: center; align-items: center; margin-top: 100px; margin-left: 200px; background-color: #1e90ff; "></canvas>
         </div>
-    
+
         <!-- <div>
             <canvas id="myChart2" style="position: relative; height:40vh; width:40vw"></canvas>
         </div>
@@ -41,7 +43,7 @@
         <div>
             <canvas id="myChart3" style="position: relative; height:15vh; width:15vw"></canvas>
         </div> -->
-    
+
     </body>
 
     <div class="navbar">
@@ -201,18 +203,18 @@
                 data: [],
                 backgroundColor: [],
                 fill: false,
-                borderColor: 'rgb(0, 0, 0)',
+                borderColor: 'rgb(187,5, 5)',
                 tension: 0.1
 
             },
-            // {
-            //     label: 'Temperatura',
-            //     data: [],
-            //     fill: false,
-            //     borderColor: 'rgb(199, 52, 52)',
-            //     tension: 0.1
-            // }
-        ]
+                // {
+                //     label: 'Temperatura',
+                //     data: [],
+                //     fill: false,
+                //     borderColor: 'rgb(199, 52, 52)',
+                //     tension: 0.1
+                // }
+            ]
         };
 
         console.log('----------------------------------------------')
@@ -223,10 +225,10 @@
         for (i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
             labels.push(registro.Porcentagem + `%`);
-            var acertos = registro.Porcentagem / 10 
+            var acertos = registro.Porcentagem / 10
             dados.datasets[0].data.push(acertos);
             // dados.datasets[0].data.push(registro.alternativaCorreta);
-            dados.datasets[0].backgroundColor.push('rgb(255, 255, 255)');
+            dados.datasets[0].backgroundColor.push('rgb(187, 5, 5)');
         }
 
         console.log('----------------------------------------------')
@@ -238,9 +240,33 @@
         console.log('----------------------------------------------')
 
         // Criando estrutura para plotar gráfico - config
+        const options = {
+            scales: {
+                x: {
+                    ticks: {
+                        color: 'white' // Cor dos números no eixo x
+                    }
+                },
+
+                y: {
+                    ticks: {
+                        color: 'white' // Cor dos números no eixo y
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        color: 'white' // Cor da legenda "Respostas Certas"
+                    }
+                }
+            }
+        };
+
         const config = {
             type: 'bar',
             data: dados,
+            options: options
         };
 
         // Adicionando gráfico criado em div na tela
