@@ -55,6 +55,7 @@ a {
     color: white;
     text-decoration: none;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .tituloTela span{
@@ -401,6 +402,20 @@ a {
 
 .redes .imgInsta{
     margin-top: 8px;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    /* O que fica abaixo da barra */
+    background:#BB0505;
+}
+
+html::-webkit-scrollbar-thumb {
+    /* Cor da barra */
+    background: linear-gradient(to right, #1E90FF, #1E9090);
 }
 
 
